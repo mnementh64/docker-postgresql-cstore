@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     protobuf-c-compiler \
     gcc
 
-RUN cd /tmp && git clone https://github.com/citusdata/cstore_fdw.git
+RUN cd /tmp && git clone -b v1.6.0 https://github.com/citusdata/cstore_fdw.git
 
 RUN cd /tmp/cstore_fdw && PATH=/usr/local/pgsql/bin/:$PATH make && PATH=/usr/local/pgsql/bin/:$PATH make install
 
