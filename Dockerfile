@@ -1,7 +1,6 @@
 FROM postgres:9.6
 
-AUTHOR Sylvain Caillet
-MAINTAINER s.caillet@free.fr
+MAINTAINER Sylvain Caillet (s.caillet@free.fr)
 
 RUN apt-get update && apt-get install -y \
     git \
