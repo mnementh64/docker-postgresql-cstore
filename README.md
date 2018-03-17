@@ -1,8 +1,8 @@
-# Docker : PostgreSQL with CStore extension
+#Docker : PostgreSQL with CStore extension
 
 ## What is CStore ?
 
-See [https://github.com/citusdata/cstore_fdw](https://github.com/citusdata/cstore_fdw) for details.
+See [https://github.com/citusdata/cstore_fdw](https://github.com/citusdata/cstore_fdw) for details, examples.
 
 It's a columnar store for analytics with Postgres, developed by Citus Data, bringing some astonishing performance for some data schema.
 
