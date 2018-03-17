@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/github/license/mnementh64/docker-postgresql-cstore.svg)](LICENSE)
 ![Docker build](https://img.shields.io/docker/automated/mnementh64/docker-postgresql-cstore.svg)
+![Docker Build Status](https://img.shields.io/docker/build/mnementh64/docker-postgresql-cstore.svg)
 
 ## What is CStore ?
 
