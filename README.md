@@ -10,10 +10,6 @@ See [https://github.com/citusdata/cstore_fdw](https://github.com/citusdata/cstor
 
 It's a columnar store for analytics with Postgres, developed by Citus Data, bringing some astonishing performance for some data schema.
 
-## Why both in Docker ?
-
-It's so useful !
-
 ## How to run it ?
 
 As the Docker entrypoint is the same as in the official PostgreSQL docker image, for custom environment, see details on the [Dockerhub page](https://hub.docker.com/_/postgres/).
