@@ -1,4 +1,4 @@
-#Docker : PostgreSQL with CStore extension
+# Docker : PostgreSQL with CStore extension
 
 ## What is CStore ?
 
