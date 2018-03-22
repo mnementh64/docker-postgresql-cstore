@@ -1,4 +1,4 @@
-FROM postgres:9.6
+FROM postgres:10.3
 
 MAINTAINER Sylvain Caillet (s.caillet@free.fr)
 
@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     libprotobuf-c0-dev \
     make \
-    postgresql-server-dev-9.6 \
+    postgresql-server-dev-10 \
     protobuf-c-compiler \
     gcc
 
