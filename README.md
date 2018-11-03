@@ -30,7 +30,28 @@ To use a custom PostgreSQL configuration :
 	# customize it ...
 
 	# run postgres with custom config
-	$ docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf mnementh64/docker-postgresql-cstore
+	$ docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf mnementh64/docker-postgresql-cstore -c 'config_file=/etc/postgresql/postgresql.conf'
+	
+In a docker-compose :
+
+	version: "2"
+	services:
+	  postgres:
+	    image: mnementh64/docker-postgresql-cstore:10.3
+	    ports:
+	      - 5432:5432
+	    volumes:
+	      - /tmp:/tmp
+	      # to use a custom config
+	      #- ./my-postgres.conf:/etc/postgresql/postgresql.conf
+	      # to persist data to host
+	      #- /path_on_host/data:/var/lib/postgresql/data
+	    # to use a custom config
+	    #command: postgres -c config_file=/etc/postgresql/postgresql.conf
+	    environment:
+	      # user : postgres
+	      POSTGRES_PASSWORD: "your_password"
+
 
 
 
